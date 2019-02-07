@@ -14,7 +14,7 @@ class App extends Component {
 
   _renderMovies = () => {
     const movies = this.state.movies.map(movie => {
-    
+    //각각 무비 인덱스에 각각영화의 타이틀, 포스터, 키 들의 값들을 초기화 시켜주는 작업
       return( <Movie
       title={movie.title_english}
       poster={movie.medium_cover_image}
