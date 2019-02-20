@@ -27,8 +27,8 @@ class App extends Component {
      return movies;
    };
 
-  _getMovies = async () => { //이전작업과 상관없이 작업수행 async가 있어서 await가 작용
-    const movies = await this._callApi(); // await은 callapi기능이 끝날때까지 기다린 (단순 완료) 그러고 call api리턴값을 movidesdp wjwkd)
+  _getMovies = async () => { //이전 작업과 상관없이 작업수행 async가 있어서 await가 작용
+    const movies = await this._callApi(); // await은 callapi 기능이 끝날때까지 기다림(단순 완료)
     this.setState({ 
       movies
     });
@@ -38,7 +38,7 @@ class App extends Component {
     return fetch(
       "https://yts.am/api/v2/list_movies.json?sort_by=download_count"
     ) 
-    .then(potato => potato.json()) // =>: 'arrow function' : return의 기능 response 오브젝트를 확인할수 있는 json으로 바꾸기
+    .then(potato => potato.json()) 
     .then(json => json.data.movies)
     .catch(err => console.log(err))
 

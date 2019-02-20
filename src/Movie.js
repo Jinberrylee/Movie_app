@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
 
-function Movie({title, poster, genres, synopsis}){//JSX에서는 class를 className으로 써야한다능
+function Movie({title, poster, genres, synopsis}){//JSX에서는 class를 className으로 써야함
     return (
         <div className="Movie"> 
             <div className="Movie_Column">
